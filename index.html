@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -183,7 +184,7 @@
         .nav-links {
             display: flex;
             align-items: center;
-            gap: 32px;
+            gap: 28px;
         }
 
         .nav-links a {
@@ -227,6 +228,41 @@
         .nav-links a:hover::after,
         .nav-links a.active::after {
             width: 100%;
+        }
+
+        /* CV NAV BUTTON */
+
+        .nav-cv {
+            padding: 8px 13px;
+            border-radius: 9px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(139,92,246,0.18),
+                    rgba(34,211,238,0.10)
+                );
+
+            border: 1px solid rgba(139,92,246,0.30);
+
+            color: #ddd6fe !important;
+
+            transition: 0.3s;
+        }
+
+        .nav-cv:hover {
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(139,92,246,0.30),
+                    rgba(34,211,238,0.16)
+                );
+
+            transform: translateY(-2px);
+        }
+
+        .nav-cv::after {
+            display: none !important;
         }
 
         .menu-btn {
@@ -517,6 +553,32 @@
             transform: translateY(-3px);
         }
 
+        /* CV BUTTON */
+
+        .cv-btn {
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(139,92,246,0.16),
+                    rgba(34,211,238,0.08)
+                );
+
+            border-color:
+                rgba(139,92,246,0.30);
+        }
+
+        .cv-btn:hover {
+            background:
+                linear-gradient(
+                    135deg,
+                    rgba(139,92,246,0.28),
+                    rgba(34,211,238,0.14)
+                );
+
+            border-color:
+                rgba(139,92,246,0.45);
+        }
+
         /* ================================
            DASHBOARD
         ================================= */
@@ -628,37 +690,14 @@
             }
         }
 
-        .bar:nth-child(1) {
-            height: 35%;
-        }
-
-        .bar:nth-child(2) {
-            height: 48%;
-        }
-
-        .bar:nth-child(3) {
-            height: 43%;
-        }
-
-        .bar:nth-child(4) {
-            height: 62%;
-        }
-
-        .bar:nth-child(5) {
-            height: 55%;
-        }
-
-        .bar:nth-child(6) {
-            height: 74%;
-        }
-
-        .bar:nth-child(7) {
-            height: 82%;
-        }
-
-        .bar:nth-child(8) {
-            height: 92%;
-        }
+        .bar:nth-child(1) { height: 35%; }
+        .bar:nth-child(2) { height: 48%; }
+        .bar:nth-child(3) { height: 43%; }
+        .bar:nth-child(4) { height: 62%; }
+        .bar:nth-child(5) { height: 55%; }
+        .bar:nth-child(6) { height: 74%; }
+        .bar:nth-child(7) { height: 82%; }
+        .bar:nth-child(8) { height: 92%; }
 
         .dashboard-bottom {
             display: grid;
@@ -829,8 +868,7 @@
         .skills-grid {
             display: grid;
 
-            grid-template-columns:
-                repeat(4, 1fr);
+            grid-template-columns: repeat(4, 1fr);
 
             gap: 15px;
         }
@@ -852,8 +890,7 @@
 
             background: rgba(139,92,246,0.07);
 
-            border-color:
-                rgba(139,92,246,0.25);
+            border-color: rgba(139,92,246,0.25);
         }
 
         .skill-icon {
@@ -896,8 +933,7 @@
         .projects-grid {
             display: grid;
 
-            grid-template-columns:
-                repeat(3, 1fr);
+            grid-template-columns: repeat(3, 1fr);
 
             gap: 20px;
         }
@@ -951,8 +987,7 @@
         .project:hover {
             transform: translateY(-8px);
 
-            border-color:
-                rgba(139,92,246,0.25);
+            border-color: rgba(139,92,246,0.25);
 
             box-shadow:
                 0 30px 60px rgba(0,0,0,0.25);
@@ -978,6 +1013,26 @@
             font-size: 22px;
 
             margin-bottom: 12px;
+        }
+
+        .project-link {
+            display: inline-block;
+
+            margin-bottom: 16px;
+
+            color: var(--cyan);
+
+            font-size: 13px;
+
+            font-weight: 600;
+
+            transition: 0.3s;
+        }
+
+        .project-link:hover {
+            color: white;
+
+            transform: translateX(3px);
         }
 
         .project p {
@@ -1156,8 +1211,7 @@
         .certificates-grid {
             display: grid;
 
-            grid-template-columns:
-                repeat(2, 1fr);
+            grid-template-columns: repeat(2, 1fr);
 
             gap: 20px;
         }
@@ -1188,8 +1242,7 @@
         .certificate-card:hover {
             transform: translateY(-5px);
 
-            border-color:
-                rgba(139,92,246,0.35);
+            border-color: rgba(139,92,246,0.35);
         }
 
         .certificate-number {
@@ -1322,8 +1375,7 @@
         .contact-link:hover {
             background: rgba(139,92,246,0.12);
 
-            border-color:
-                rgba(139,92,246,0.3);
+            border-color: rgba(139,92,246,0.3);
 
             color: white;
 
@@ -1384,11 +1436,9 @@
 
             border-radius: 12px;
 
-            background:
-                rgba(139,92,246,0.15);
+            background: rgba(139,92,246,0.15);
 
-            border: 1px solid
-                rgba(139,92,246,0.25);
+            border: 1px solid rgba(139,92,246,0.25);
 
             color: white;
 
@@ -1412,13 +1462,23 @@
         .back-top:hover {
             transform: translateY(-4px);
 
-            background:
-                rgba(139,92,246,0.25);
+            background: rgba(139,92,246,0.25);
         }
 
         /* ================================
            RESPONSIVE
         ================================= */
+
+        @media(max-width: 1050px) {
+
+            .nav-links {
+                gap: 18px;
+            }
+
+            .nav-links a {
+                font-size: 13px;
+            }
+        }
 
         @media(max-width: 950px) {
 
@@ -1433,13 +1493,26 @@
             }
 
             .skills-grid {
-                grid-template-columns:
-                    repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .projects-grid {
-                grid-template-columns:
-                    repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .nav-links {
+                gap: 14px;
+            }
+        }
+
+        @media(max-width: 800px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .menu-btn {
+                display: block;
             }
         }
 
@@ -1462,17 +1535,19 @@
 
                 flex-direction: column;
 
-                background:
-                    rgba(5,6,10,0.96);
+                background: rgba(5,6,10,0.96);
 
                 backdrop-filter: blur(20px);
 
-                border-bottom:
-                    1px solid var(--border);
+                border-bottom: 1px solid var(--border);
             }
 
             .nav-links.open {
                 display: flex;
+            }
+
+            .nav-links a {
+                font-size: 14px;
             }
 
             .menu-btn {
@@ -1500,8 +1575,7 @@
             }
 
             .skills-grid {
-                grid-template-columns:
-                    repeat(2, 1fr);
+                grid-template-columns: repeat(2, 1fr);
             }
 
             .dashboard-bottom {
@@ -1534,6 +1608,15 @@
 
             .chart {
                 gap: 6px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .btn {
+                width: 100%;
             }
         }
 
@@ -1577,6 +1660,15 @@
 
                 <a href="#contact">Contact</a>
 
+                <!-- CV DOWNLOAD TAB -->
+                <a
+                    href="Mohammad_Atif_CV.pdf"
+                    download="Mohammad_Atif_CV.pdf"
+                    class="nav-cv"
+                >
+                    📄 CV
+                </a>
+
             </div>
 
             <button class="menu-btn">
@@ -1603,13 +1695,6 @@
                     <!-- PROFILE PHOTO -->
 
                     <div class="profile-photo">
-
-                        <!--
-                            Put your image in the same folder
-                            and name it:
-
-                            profile.jpg
-                        -->
 
                         <img
                             src="profile.jpg"
@@ -1664,6 +1749,17 @@
                             View My Work
                             →
                         </a>
+
+
+                        <!-- CV DOWNLOAD BUTTON -->
+                        <a
+                            href="Mohammad_Atif_CV.pdf"
+                            download="Mohammad_Atif_CV.pdf"
+                            class="btn btn-secondary cv-btn"
+                        >
+                            📄 Download CV
+                        </a>
+
 
                         <a
                             href="#contact"
@@ -2124,7 +2220,12 @@
                         Jordan Dataset Dashboard
                     </h3>
 
-                    <a href="https://drive.google.com/drive/folders/1OYq8-uFObWd4nIIy6XUwqrh84MMC9e6h?usp=drive_link" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <a
+                        href="https://drive.google.com/drive/folders/1OYq8-uFObWd4nIIy6XUwqrh84MMC9e6h?usp=drive_link"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
                         View Dashboard ↗
                     </a>
 
@@ -2170,7 +2271,12 @@
                         Jordan Sales Analysis
                     </h3>
 
-                    <a href="https://github.com/Mohammad-Atif-2005/Jordan-Resale-Data-Analysis" target="_blank" rel="noopener noreferrer" class="project-link">
+                    <a
+                        href="https://github.com/Mohammad-Atif-2005/Jordan-Resale-Data-Analysis"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="project-link"
+                    >
                         View Project ↗
                     </a>
 
@@ -2407,6 +2513,8 @@
 
             </div>
 
+        </div>
+
     </section>
 
 
@@ -2439,6 +2547,7 @@
             <div class="certificates-grid">
 
                 <!-- CERTIFICATE 01 -->
+
                 <div class="certificate-card">
 
                     <div class="certificate-number">
@@ -2472,6 +2581,7 @@
 
 
                 <!-- CERTIFICATE 02 -->
+
                 <div class="certificate-card">
 
                     <div class="certificate-number">
@@ -2505,6 +2615,7 @@
 
 
                 <!-- CERTIFICATE 03 -->
+
                 <div class="certificate-card">
 
                     <div class="certificate-number">
@@ -2538,6 +2649,7 @@
 
 
                 <!-- CERTIFICATE 04 -->
+
                 <div class="certificate-card">
 
                     <div class="certificate-number">
@@ -2602,7 +2714,9 @@
                 <div class="contact-links">
 
                     <a
-                        href="https://mail.google.com/mail/?view=cm&fs=1&to=mohmmadaatif01594@gmail.com" target="_blank" rel="noopener noreferrer"
+                        href="https://mail.google.com/mail/?view=cm&fs=1&to=mohmmadaatif01594@gmail.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
                         class="contact-link"
                     >
                         ✉ Email
@@ -2612,6 +2726,7 @@
                     <a
                         href="https://www.linkedin.com/in/mohammadatif11"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="contact-link"
                     >
                         LinkedIn
@@ -2621,6 +2736,7 @@
                     <a
                         href="https://github.com/Mohammad-Atif-2005"
                         target="_blank"
+                        rel="noopener noreferrer"
                         class="contact-link"
                     >
                         GitHub
@@ -2996,3 +3112,4 @@
 
 </body>
 </html>
+```
